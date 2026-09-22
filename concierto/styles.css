@@ -1,0 +1,82 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+head{
+    background-color: #090783;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #000;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+html{
+    font-size: 12px;
+    background-color: #0288e2;
+}
+
+
+
+   
+
+
+body{
+   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ img{
+ position: absolute;
+    z-index: -9;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+
+ h1{
+    background: linear-gradient(50deg, #f8f5eb, #af2d2400);
+    background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+button{
+    cursor: pointer;
+    background: linear-gradient(50deg, #03e2bd, #066cf18a);
+    padding: 5px;
+    color: azure;
+    border-radius: 5px #04fae500;
+    border-style: none;
+
+}
+
+nav{
+ gap: 30px;
+    background-color: #e29b02;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #000;
+    display: flex;
+    justify-content: center;
+}
+#proximos{
+background-color: #082686;
+    border: 5px solid black;
+    width: 500px;
+}
+
+#artistas{
+    background-color: #082686;
+    border: 5px solid black;
+    width: 500px;
+   padding: 5px;
+   
+}
+#boletos{
+    background-color: #46a308;
+}
