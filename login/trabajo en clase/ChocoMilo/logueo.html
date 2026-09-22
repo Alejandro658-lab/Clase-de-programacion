@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1976d2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+
+            background: #125AA0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h2>inicio de sesión</h2>
+        <form onsubmit="login(event)">
+            <input type="text" id="usuario" placeholder="usuario" required>
+            <input type="password" id="Contraseña" placeholder="Contraseña" required>
+            <button type="submit">
+                Entrar
+            </button>
+        </form>
+        <p id="mensaje"></p>
+    </div>
+    <script>
+        function login(event) {
+            event.preventDefault();
+
+            const usuario = document.getElementById("usuario").value;
+            const clave = document.getElementById("Contraseña").value;
+
+            if (usuario === "admin" && clave === "1234") {
+                document.getElementById("mensaje").textContent = "Login correcto";
+                window.location.href="index.html"
+
+            } else {
+                document.getElementById("mensaje").textContent = "Usuario o contraseña incorrectos";
+
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
